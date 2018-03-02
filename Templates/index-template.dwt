@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title></title>
+<!-- TemplateEndEditable -->
+<meta charset="utf-8">
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="../css/grid.css" type="text/css" media="screen"> 
+    <script src="../js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="../js/jquery.galleriffic.js" type="text/javascript"></script>
+    <script src="../js/jquery.opacityrollover.js" type="text/javascript"></script>
+    <script src="../js/btn-top.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body id="page1" onLoad="getLocation()">
+	<!--==============================header=================================-->
+    <header><!--begin header-->
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu"><!--menu navigation-->
+                              <!-- TemplateBeginEditable name="EditRegion4" -->
+                                <li><a class="active" href="../index.html">Home</a></li>
+                                <li><a href="../about-us.html">About Us</a></li>
+                                <li><a href="../gellary-2016.html">Gallery</a></li>
+                                <li><a href="../price.html">Price & Sale Off</a></li>
+                                <li><a href="../contacts.html">Contacts</a></li>
+                              <!-- TemplateEndEditable -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9"><!--Maked logo-->
+                    	<h1>
+                            <a class="logo" href="../index.html">Hau<strong>L</strong>e</a>
+                            <span>Studio</span>
+                        </h1>
+                    </div>
+                    <div class="grid_3"><!--Search-->
+                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header><!--end header-->
+    
+<!-- content --><!-- TemplateBeginEditable name="EditRegion1" -->
+<section id="content">
+  <div class="bg-top">
+    <div class="bg-top-2">
+      <div class="bg">
+        <div class="bg-top-shadow">
+          <div class="main">
+            <div class="gallery p3">
+              <div class="wrapper indent-bot">
+                <div id="gallery" class="content">
+                  <div class="wrapper"><!--wrapper slideshow-->
+                    <div class="slideshow-container">
+                      <div id="slideshow" class="slideshow"></div><!--Slideshow-->
+                    </div>
+                  </div>
+                </div>
+                <div id="thumbs" class="navigation"><!--thumb on right-->
+                  <ul class="thumbs noscript">
+                    <li> <a class="thumb" href="../images/gallery-img1.jpg" title=""> <img src="../images/thumb-1.jpg" alt="" /><span></span></a> </li>
+                    <li> <a class="thumb" href="../images/gallery-img2.jpg" title=""> <img src="../images/thumb-2.jpg" alt="" /> <span></span></a> </li>
+                    <li> <a class="thumb" href="../images/gallery-img3.jpg" title=""> <img src="../images/thumb-3.jpg" alt="" /> <span></span></a> </li>
+                    <li> <a class="thumb" href="../images/gallery-img4.jpg" title=""> <img src="../images/thumb-4.jpg" alt="" /> <span></span></a> </li>
+                    <li> <a class="thumb" href="../images/gallery-img5.jpg" title=""> <img src="../images/thumb-5.jpg" alt="" /> <span></span></a> </li>
+                    <li> <a class="thumb" href="../images/gallery-img6.jpg" title=""> <img src="../images/thumb-6.jpg" alt="" /> <span></span></a> </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="inner"><!--text in slideshow-->
+                <div class="wrapper"> <span class="title img-indent3">HELLO!</span>
+                  <div class="extra-wrap indent-top2"> Beginning in 2008, with over 8 years of experience working in the field of Media and Communications Fig- official activities since 2010 in the market of Vietnam, Corporation Communications HauLe, brand <a href="../index.html" style="text-decoration:none;">HauLeStudio Studio</a>, self is proud to be one of the few companies with a leading voice in the field of Communications - Entertainment. </div>
+                </div>
+              </div>
+            </div>
+            <section class="container_12"><!-- begin our services list-->
+              <div class="wrapper">
+                <article class="grid_12">
+                  <h3 class="color-1">Our Services List</h3>
+                  <div class="wrapper">
+                    <article class="grid_6 alpha"> <!--services list left-->
+                      <figure class="img-indent frame"><img src="../images/page1-img1.jpg" style="width:221px; height:142px;" alt="" /></figure>
+                      <div class="extra-wrap">
+                        <div class="indent-top">
+                          <ul class="list-1">
+                            <li><a href="#">Outside Wedding</a></li>
+                            <li><a href="#">Bride make up</a></li>
+                            <li class="last"><a href="#">Korean wedding photos</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                    </article><!--end left-->
+                    <!--services list right-->
+                    <article class="grid_6 omega">
+                      <figure class="img-indent frame"><img src="../images/page1-img2.jpg" style="width:221px; height:142px" alt="" /></figure>
+                      <div class="extra-wrap">
+                        <div class="indent-top">
+                          <ul class="list-1">
+                            <li><a href="#">Print design</a></li>
+                            <li><a href="#">Advertising services</a></li>
+                            <li class="last"><a href="#">Manufacturing program</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="clear"></div>
+                    </article><!--end right-->
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--end our servies list-->
+</section>
+<!--end content-->
+<!-- TemplateEndEditable -->
+<!--==============================footer=================================-->
+<footer>
+    <div class="main">
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_4">
+                    <div>PhotoArt &copy; 2016 <a class="link color-3" href="#">Privacy Policy</a></div>
+                    <div>&copy; Copyright 2016  haulestudio.vn, All rights reserved. 
+                  </div>
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+                <div class="grid_4">
+                    <span class="phone-numb"><span>+84</span> 946 627 374</span>
+                </div>
+                <div class="grid_4"><!--items nav link-->
+                    <ul class="list-services">
+                        <li><a href="#"></a></li>
+                        <li><a class="item-2" href="#"></a></li>
+                        <li><a class="item-3" href="#"></a></li>
+                        <li><a class="item-4" href="#"></a></li>
+                        <a id="noop-top" style="display: none; position: fixed;bottom: 1px; right:1%; cursor:pointer;font:12px arial;z-index:9999;"><img src="../images/back-to-top.png"/></a>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+      
+</footer><!--end footer-->
+<script type="text/javascript">//run slideshow
+		$(window).load(function() {
+		// We only want these styles applied when javascript is enabled
+		$('div.navigation').css({'width' : '320px', 'float' : 'right'});
+		$('div.content').css('display', 'block');
+
+		// Initially set opacity on thumbs and add
+		// additional styling for hover effect on thumbs
+		var onMouseOutOpacity = 0.5;
+		$('#thumbs ul.thumbs li span').opacityrollover({
+			mouseOutOpacity:   onMouseOutOpacity,
+			mouseOverOpacity:  0.0,
+			fadeSpeed:         'fast',
+			exemptionSelector: '.selected'
+		});
+		
+		// Initialize Advanced Galleriffic Gallery
+		var gallery = $('#thumbs').galleriffic({
+			delay:                     7000,
+			numThumbs:                 12,
+			preloadAhead:              6,
+			enableTopPager:            false,
+			enableBottomPager:         false,
+			imageContainerSel:         '#slideshow',
+			controlsContainerSel:      '',
+			captionContainerSel:       '',
+			loadingContainerSel:       '',
+			renderSSControls:          true,
+			renderNavControls:         true,
+			playLinkText:              'Play Slideshow',
+			pauseLinkText:             'Pause Slideshow',
+			prevLinkText:              'Prev',
+			nextLinkText:              'Next',
+			nextPageLinkText:          'Next',
+			prevPageLinkText:          'Prev',
+			enableHistory:             true,
+			autoStart:                 7000,
+			syncTransitions:           true,
+			defaultTransitionDuration: 900,
+			onSlideChange:             function(prevIndex, nextIndex) {
+				// 'this' refers to the gallery, which is an extension of $('#thumbs')
+				this.find('ul.thumbs li span')
+					.css({opacity:0.5})
+			},
+			onPageTransitionOut:       function(callback) {
+				this.find('ul.thumbs li span').css({display:'block'});
+			},
+			onPageTransitionIn:        function() {
+				this.find('ul.thumbs li span').css({display:'none'});
+			}
+		});
+	});
+</script>
+</body>
+</html>
