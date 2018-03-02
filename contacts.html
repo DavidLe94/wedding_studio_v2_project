@@ -1,0 +1,245 @@
+<!DOCTYPE html><html lang="en"><!-- InstanceBegin template="/Templates/index-template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Contact Us</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/modify-message-required.js"></script>
+
+<!-- InstanceEndEditable -->
+<meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen"> 
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.galleriffic.js" type="text/javascript"></script>
+    <script src="js/jquery.opacityrollover.js" type="text/javascript"></script>
+    <script src="js/btn-top.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+<body id="page1" onLoad="getLocation()">
+	<!--==============================header=================================-->
+    <header><!--begin header-->
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu"><!--menu navigation-->
+                              <!-- InstanceBeginEditable name="EditRegion4" -->
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="gellary-2016.html">Gellary</a></li>
+                                <li><a href="price.html">Price & Sale Off</a></li>
+                                <li><a class="active" href="contacts.html">Contacts</a></li>
+                              <!-- InstanceEndEditable -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9"><!--Maked logo-->
+                    	<h1>
+                            <a class="logo" href="index.html">Hau<strong>L</strong>e</a>
+                            <span>Studio</span>
+                        </h1>
+                    </div>
+                    <div class="grid_3"><!--Search-->
+                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header><!--end header-->
+    
+<!-- content --><!-- InstanceBeginEditable name="EditRegion1" -->
+  <section id="content">
+        <div class="bg-top">
+        	<div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="box">
+                                <div class="padding">
+                                    <div class="container_12">
+                                        <div class="wrapper">
+                                            <div class="grid_12">
+                                            	<div class="indent-left"><!--maked contact form-->
+                                                	<h3 class="p2" >Contact Form</h3>
+                                                    <form id="contact-form" method="post" enctype="multipart/form-data">                                                        <fieldset>
+                                                              <label><span class="text-form">Name:</span><input name="txtname" type="text" required requiredmsg="Please!, Enter a name."/></label>
+                                                              <label><span class="text-form">Email:</span><input name="txtemail" type="email" required requiredmsg="Please!, Enter a email."/></label>   
+                                                              <label><span class="text-form">Phone:</span><input name="txtphone" type="tel" required requiredmsg="Please!, Enter a number phone."/></label>                                    
+                                                              <div class="wrapper"><div class="text-form">Message:</div><textarea required requiredmsg="Please!, Enter a content."></textarea></div><br>
+                                                              <label><input name="txtphone" type="submit"  value="Send" style="width:100px;margin-left:85.5%;background:#000;color:#FFF;height:40px;font-weight:bold;font-size:18px;" id="submit"/></label>                     
+                                                        </fieldset>	
+                                                    </form><br>
+                                                    <h3 class="p2" id="map">Location</h3>
+                                                    <div class="bg-bot" id="mapholder"></div><!--show map-->
+                                                    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+													<script>//get location show on "#mapholder"
+                                                    var x = document.getElementById("map");
+                                                    function getLocation() {
+                                                        if (navigator.geolocation) {
+                                                            navigator.geolocation.getCurrentPosition(showPosition, showError);
+                                                        } else { 
+                                                            x.innerHTML = "Geolocation is not supported by this browser.";
+                                                        }
+                                                    }
+                                                    
+                                                    function showPosition(position) {
+														//location
+                                                        lat = position.coords.latitude;
+                                                        lon = position.coords.longitude;
+                                                        latlon = new google.maps.LatLng(lat, lon)
+                                                        mapholder = document.getElementById('mapholder')
+														// set size map
+                                                        mapholder.style.height = '400px';
+                                                        mapholder.style.width = '97%';
+                                                    
+                                                        var myOptions = {
+                                                        center:latlon,zoom:14,
+                                                        mapTypeId:google.maps.MapTypeId.ROADMAP,
+                                                        mapTypeControl:false,
+                                                        navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
+                                                        }
+                                                        
+                                                        var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+                                                        var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+                                                    }
+                                                    
+                                                    function showError(error) {//test error
+                                                        switch(error.code) {
+                                                            case error.PERMISSION_DENIED:
+                                                                x.innerHTML = "User denied the request for Geolocation."
+                                                                break;
+                                                            case error.POSITION_UNAVAILABLE:
+                                                                x.innerHTML = "Location information is unavailable."
+                                                                break;
+                                                            case error.TIMEOUT:
+                                                                x.innerHTML = "The request to get user location timed out."
+                                                                break;
+                                                            case error.UNKNOWN_ERROR:
+                                                                x.innerHTML = "An unknown error occurred."
+                                                                break;
+                                                        }
+                                                    }
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </section>
+<!--end content-->
+<!-- InstanceEndEditable -->
+<!--==============================footer=================================-->
+<footer>
+    <div class="main">
+        <div class="container_12">
+            <div class="wrapper">
+                <div class="grid_4">
+                    <div>PhotoArt &copy; 2016 <a class="link color-3" href="#">Privacy Policy</a></div>
+                    <div>&copy; Copyright 2016  haulestudio.vn, All rights reserved. 
+                  </div>
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+                <div class="grid_4">
+                    <span class="phone-numb"><span>+84</span> 946 627 374</span>
+                </div>
+                <div class="grid_4"><!--items nav link-->
+                    <ul class="list-services">
+                        <li><a href="#"></a></li>
+                        <li><a class="item-2" href="#"></a></li>
+                        <li><a class="item-3" href="#"></a></li>
+                        <li><a class="item-4" href="#"></a></li>
+                        <a id="noop-top" style="display: none; position: fixed;bottom: 1px; right:1%; cursor:pointer;font:12px arial;z-index:9999;"><img src="images/back-to-top.png"/></a>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+      
+</footer><!--end footer-->
+<script type="text/javascript">//run slideshow
+		$(window).load(function() {
+		// We only want these styles applied when javascript is enabled
+		$('div.navigation').css({'width' : '320px', 'float' : 'right'});
+		$('div.content').css('display', 'block');
+
+		// Initially set opacity on thumbs and add
+		// additional styling for hover effect on thumbs
+		var onMouseOutOpacity = 0.5;
+		$('#thumbs ul.thumbs li span').opacityrollover({
+			mouseOutOpacity:   onMouseOutOpacity,
+			mouseOverOpacity:  0.0,
+			fadeSpeed:         'fast',
+			exemptionSelector: '.selected'
+		});
+		
+		// Initialize Advanced Galleriffic Gallery
+		var gallery = $('#thumbs').galleriffic({
+			delay:                     7000,
+			numThumbs:                 12,
+			preloadAhead:              6,
+			enableTopPager:            false,
+			enableBottomPager:         false,
+			imageContainerSel:         '#slideshow',
+			controlsContainerSel:      '',
+			captionContainerSel:       '',
+			loadingContainerSel:       '',
+			renderSSControls:          true,
+			renderNavControls:         true,
+			playLinkText:              'Play Slideshow',
+			pauseLinkText:             'Pause Slideshow',
+			prevLinkText:              'Prev',
+			nextLinkText:              'Next',
+			nextPageLinkText:          'Next',
+			prevPageLinkText:          'Prev',
+			enableHistory:             true,
+			autoStart:                 7000,
+			syncTransitions:           true,
+			defaultTransitionDuration: 900,
+			onSlideChange:             function(prevIndex, nextIndex) {
+				// 'this' refers to the gallery, which is an extension of $('#thumbs')
+				this.find('ul.thumbs li span')
+					.css({opacity:0.5})
+			},
+			onPageTransitionOut:       function(callback) {
+				this.find('ul.thumbs li span').css({display:'block'});
+			},
+			onPageTransitionIn:        function() {
+				this.find('ul.thumbs li span').css({display:'none'});
+			}
+		});
+	});
+</script>
+</body>
+<!-- InstanceEnd --></html>
+<script>
+	$(document).ready(function(){
+		$("#submit").mousemove(function(){$("#submit").css({'background':'#F90'});});
+		$("#submit").mouseout(function(){$("#submit").css({'background':'#000'});});
+		});
+</script>
